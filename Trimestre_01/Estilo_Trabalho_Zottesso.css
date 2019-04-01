@@ -1,6 +1,7 @@
 *{
   padding: 0px;
   font-family: 'Roboto', sans-serif;
+
 }
 .curriculo{
   width: 1000px;
@@ -36,4 +37,9 @@
 .conteudo{
   padding: 2px;
   margin: 0px;
+}
+.curriculo{
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 7px;
 }
