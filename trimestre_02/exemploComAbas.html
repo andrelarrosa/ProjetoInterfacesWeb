@@ -9,7 +9,7 @@
     <div class="container">
       <p id="nome">André Luiz Gonçalves Larrosa</p>
       <p id="instituicao">IFPR</p>
-      <p id="contato"> telefone</p>
+      <p id="contato"> 998711836</p>
 
         <button type="button" class="btn btn-primary" id="btnPessoais">
           Dados pessoais
@@ -20,7 +20,9 @@
         <button type="button" class="btn btn-primary" id="btnContato">
           dados de contato
         </button>
-
+        <button type="button" class="btn btn-primary" id="btnHidding">
+          Esconder Tudo
+        </button>
       </div>
       </div>
   </body>
@@ -28,27 +30,33 @@
   <script>
     $(document).ready(function() {
       //hiding
-        $("#nome").fadeOut();
-        $("#instituicao").fadeOut();
-        $("#contato").fadeOut();
+        $("#nome").hide();
+        $("#instituicao").hide();
+        $("#contato").hide();
       //showing
         $("#btnPessoais").click(function(event) {
-          $("#instituicao").fadeOut();
-          $("#contato").fadeOut();
+          $("#instituicao").hide();
+          $("#contato").hide();
           $("#nome").fadeIn();
         });
 
         $("#btnAcademico").click(function(event) {
-          $("#contato").fadeOut();
-          $("#nome").fadeOut();
+          $("#contato").hide();
+          $("#nome").hide();
           $("#instituicao").fadeIn();
         });
         $("#btnContato").click(function(event) {
-          $("#nome").fadeOut();
-          $("#instituicao").fadeOut();
+          $("#nome").hide();
+          $("#instituicao").hide();
           $("#contato").fadeIn();
         });
 
+        //hiding all
+        $("#btnHidding").click(function(event) {
+          $("#nome").hide();
+          $("#instituicao").hide();
+          $("#contato").hide();
+        });
 
     });
   </script>
