@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>jQuery Introduction</h2>
+
+      <p id="hider">I don't know nothing</p>
+      <p>This is a classroom, but I'm don't like this</p>
+      <p>click this button for end the world</p>
+
+      <button type="button" class="btn btn-primary" id="btnHide">
+        Hide
+      </button>
+      <button type="buttonShow" class="btn btn-primary" id="btnShow">
+        Show
+      </button>
+      <div class="exercicio-2">
+        <h2>Exemplo com abas </h2>
+        <button type="buttonShow" class="btn btn-primary" id="btnShow">
+          dados pessoais
+        </button>
+        <button type="buttonShow" class="btn btn-primary" id="btnShow">
+            dados acadêmicos
+          </button>
+          <button type="buttonShow" class="btn btn-primary" id="btnShow">
+            dados de contato
+          </button>
+      </div>
+    </div>
+
+
+  </body>
+  <script src="./JS/jQuery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btnHide").click(function(event) {
+        alert("Doesn't Work");
+        $("#hider").hide();
+        alert("congrazz")
+      });
+      $("#btnShow").click(function(event) {
+        $("p").show();
+      });
+    });
+  </script>
+</html>

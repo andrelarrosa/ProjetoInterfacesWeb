@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="nome">André Luiz Gonçalves Larrosa</p>
+      <p id="instituicao">IFPR</p>
+      <p id="contato"> telefone</p>
+
+        <button type="button" class="btn btn-primary" id="btnPessoais">
+          Dados pessoais
+        </button>
+        <button type="button" class="btn btn-primary" id="btnAcademico">
+          Dados acadêmicos
+        </button>
+        <button type="button" class="btn btn-primary" id="btnContato">
+          dados de contato
+        </button>
+
+      </div>
+      </div>
+  </body>
+  <script src="./JS/jQuery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      //hiding
+        $("#nome").fadeOut();
+        $("#instituicao").fadeOut();
+        $("#contato").fadeOut();
+      //showing
+        $("#btnPessoais").click(function(event) {
+          $("#instituicao").fadeOut();
+          $("#contato").fadeOut();
+          $("#nome").fadeIn();
+        });
+
+        $("#btnAcademico").click(function(event) {
+          $("#contato").fadeOut();
+          $("#nome").fadeOut();
+          $("#instituicao").fadeIn();
+        });
+        $("#btnContato").click(function(event) {
+          $("#nome").fadeOut();
+          $("#instituicao").fadeOut();
+          $("#contato").fadeIn();
+        });
+
+
+    });
+  </script>
+</html>
