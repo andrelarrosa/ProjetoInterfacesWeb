@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form in HTML</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>André Luiz Gonçalves Larrosa</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <h3>Register Forms</h3>
+          <hr>
+          <!-- a just example without a action, because, a just test -->
+          <form action="" method="get">
+            <label>Name: </label><br>
+            <input type="text" name="nome" value="">  <br>
+            <label>Birthday: </label><br>
+            <input type="date" name="birthday" value=""><br>
+            <label>city: </label><br>
+            <select name="city">
+              <option value=""></option>
+              <option value="1">Paranavaí</option>
+              <option value="2">Alto Paraná</option>
+              <option value="3">Nova Esperança</option>
+            </select><br>
+            <input class="mt-3 btn btn-info" type="button" name="submit" value="enviar">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./JS/jQuery.min.js"></script>
+</html>
