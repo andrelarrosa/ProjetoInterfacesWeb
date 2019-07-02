@@ -1,0 +1,25 @@
+$(document).ready(function(){
+    $("#acesa").hide();
+    $("#quebrada").hide();
+    if($("#apagada").mouseenter()){
+        $("#apagada").mouseenter(function(){
+            $("#apagada").hide();
+            $("#quebrada").hide();
+            $("#acesa").show(); 
+       });  
+    } 
+    if ($("#acesa").mouseleave()){
+        $("#acesa").mouseleave(function(){
+            $("#acesa").hide();
+            $("#quebrada").hide();
+            $("#apagada").show();
+        });
+    }
+    if($("#acesa").mousedwon()){
+        $("#acesa").mousedown(function(){
+            $("#acesa").hide();
+            $("#apagada").hide();
+            $("#quebrada").show();
+        });
+    }
+});
